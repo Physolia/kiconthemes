@@ -44,13 +44,16 @@ public:
      */
     explicit KIconButton(QWidget *parent = nullptr);
 
+#if KICONTHEMES_ENABLE_DEPRECATED_SINCE(5, 75)
     /**
      * Constructs a KIconButton using a specific icon loader.
      *
      * @param loader The icon loader to use.
      * @param parent The parent widget.
      */
+    KICONTHEMES_DEPRECATED_VERSION(5, 75, "Use KIconButton(QWidget *) instead")
     KIconButton(KIconLoader *loader, QWidget *parent);
+#endif
 
     /**
      * Destructs the button.

@@ -271,7 +271,7 @@ KIconDialog::KIconDialog(QWidget *parent)
     installEventFilter(new ShowEventFilter(this));
 }
 
-#if KICONTHEMES_BUILD_DEPRECATED_SINCE(5, 75)
+#if KICONTHEMES_BUILD_DEPRECATED_SINCE(5, 82)
 KIconDialog::KIconDialog(KIconLoader *loader, QWidget *parent)
     : QDialog(parent)
     , d(new KIconDialogPrivate(this))

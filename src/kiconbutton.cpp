@@ -51,7 +51,7 @@ KIconButton::KIconButton(QWidget *parent)
     QPushButton::setIconSize(QSize(48, 48));
 }
 
-#if KICONTHEMES_BUILD_DEPRECATED_SINCE(5, 75)
+#if KICONTHEMES_BUILD_DEPRECATED_SINCE(5, 82)
 KIconButton::KIconButton(KIconLoader *loader, QWidget *parent)
     : QPushButton(parent)
     , d(new KIconButtonPrivate(this, loader))
